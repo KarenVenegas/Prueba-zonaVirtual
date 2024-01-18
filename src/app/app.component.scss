@@ -1,0 +1,155 @@
+.content-filters{
+  margin: 1rem auto;
+  width: 95%;
+}
+ .filtro-busqueda {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    background: linear-gradient(to right, #fff 90%, #F4D6D9 85%);
+    border-radius: 35px;
+    input{
+      flex: 1;
+      height: 100%;
+      border: none;
+      background: transparent;
+      padding: 8px 5px;
+      font-size: 15px;
+      color: #333;
+      margin-right: 12px;
+    }
+    input:focus {
+      outline: none;
+    }
+    mat-icon{
+      padding: 0;
+      font-size: 26px;
+      font-weight: 100;
+      width: 27px;
+      height: 24px;
+    }
+  }
+
+  
+.new{ 
+  text-align: end;
+  button{
+    border-radius: 10px;
+    background-color: rgba(201, 52, 63, 0.2);
+    border: none;
+    font-size: 24px;
+    padding: 0.5rem 1rem;
+    font-weight: 800;
+  }
+}
+.content{
+  display: flex;
+  align-items: center;
+  width: 95%;
+  background: #fff;
+  margin: 10px auto;
+  padding: 1rem;
+  border-radius: 15px;
+  h6, p{
+    margin: 5px 0;
+  }
+  h6{
+    color: #989898;
+    font-weight: 600;
+  }
+  p{
+    color: #000;
+    font-weight: 700;
+  }
+  .name{
+    text-transform: uppercase;
+  }
+
+  .actions{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    mat-icon{
+      margin: auto 10px;
+      padding: 10px;
+      font-size: 25px;
+      height: 45px;
+      width: 45px;
+      border-radius: 10px;
+      background: FFF;
+      box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+    }
+
+    mat-icon:hover{
+      background-color:#F2F2F2;
+    }
+    .edit:hover{
+      background-color: #C9343F;
+      color: #fff; 
+    }
+  }
+
+}
+
+
+.aprobado, .rechazado, .pendiente{
+    height: 10%;
+    width: 66%;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 25px;
+  }
+  .aprobado{
+    background: #CCFFD7;
+  }
+  .rechazado{
+    background: #FFCCCC;
+  }
+  .pendiente{
+    background: #FEFFCC;
+  }
+
+
+
+  .filter-row {
+        display: flex;
+        padding: 0;
+        button{
+          background-color: transparent;
+          border: solid 1px #C9343F;
+          border-radius: 25px;
+          padding: 0.5rem 0.7rem;
+          color:#C9343F;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 80%;
+          margin: auto 2px;
+        }
+      }
+        
+      .filter-row  button.active {
+        background-color: #C9343F;
+        color: white;
+        
+      }
+      
+      .filter-row  button.active mat-icon{
+        background-color: #fff;
+        border-radius: 50%;
+        color: #C9343F;
+        margin-left: 10px;
+      }
+      .clear_filter{
+        width: 40px;
+        height: 80%;
+        margin: auto 0;
+        cursor: pointer;
+      }
+.text{
+  text-align: center;
+}

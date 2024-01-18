@@ -1,0 +1,88 @@
+<div class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-content">
+        <!-- Contenido del modal -->
+        <mat-icon class="close-button"  (click)="closeModal()">close</mat-icon>
+
+        <h2>Crear registro</h2>
+        <form [formGroup]="form" class="row" (ngSubmit)="send()">
+
+          <!-- TRANSACCION -->
+
+          <div class="col-md-4">
+
+            <label for="Trans_codigo">Código transacción *</label><br>
+            <input type="number" name="codigo" formControlName="Trans_codigo"><br><br>
+            
+            <mat-form-field placeholder="Medio de pago">
+              <label for="Trans_medio_pago">Medio de pago *</label><br>
+              <mat-select formControlName="Trans_medio_pago">
+                <mat-option [value]="32">Tarjeta de crédito </mat-option>
+                <mat-option [value]="29">PSE </mat-option>
+                <mat-option [value]="41">Gana </mat-option>
+                <mat-option [value]="42">Caja </mat-option>
+              </mat-select>
+            </mat-form-field><br>
+
+            <mat-form-field placeholder="Estado transacción">
+              <label for="Trans_estado">Estado transacción *</label><br>
+              <mat-select formControlName="Trans_estado">
+                <mat-option [value]="1">Aprobada </mat-option>
+                <mat-option [value]="1000">Rechazada </mat-option>
+                <mat-option [value]="999">Pendiente </mat-option>
+              </mat-select>
+            </mat-form-field><br>
+
+            <label for="Trans_total">Total transacción *</label><br>
+            <input type="number" name="codigo" formControlName="Trans_total"><br><br>
+            
+            <label for="Trans_fecha">Fecha transacción *</label><br>
+            <input type="datetime-local" name="codigo" formControlName="Trans_fecha" ><br><br>
+            
+            <label for="Trans_concepto"> *</label>Concepto transacción<br>
+            <input type="text" name="codigo" formControlName="Trans_concepto" ><br>
+            
+          </div>
+
+          <!-- COMERCIO -->
+
+          <div class="col-md-4">
+
+            <label for="comercio_codigo">Código comercio *</label><br>
+            <input type="number"  formControlName="comercio_codigo" ><br>
+            
+            <label for="comercio_nombre">Nombre comercio *</label><br>
+            <input type="text" formControlName="comercio_nombre" ><br>
+            
+            <label for="comercio_nit">Nit comercio *</label><br>
+            <input type="text" formControlName="comercio_nit" ><br>
+            
+            <label for="comercio_direccion">Dirección comercio *</label><br>
+            <input type="text" formControlName="comercio_direccion" ><br>
+            
+          </div>
+
+          <!-- CLIENTE -->
+
+          <div class="col-md-4">
+
+            <label for="usuario_identificacion">Identificación usuario *</label><br>
+            <input type="number" formControlName="usuario_identificacion"><br>
+            
+            <label for="usuario_nombre">Nombre usuario *</label><br>
+            <input type="text" formControlName="usuario_nombre"><br>
+            
+            <label for="usuario_email">Correo usuario *</label><br>
+            <input type="email" formControlName="usuario_email"><br>
+            
+          </div>
+
+          <button class="btn_send" type="submit"  >Guardar</button>
+        </form>
+        <div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  

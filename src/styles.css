@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=+Sans&family=Nunito:wght@300;400;600;700;800&display=swap');
+
+html, body { 
+    height: 100%;
+    background-color: #F2F2F2;
+ }
+body { margin: 0; font-family: 'Nunito', "Helvetica Neue", sans-serif;  }
+
+
+.toast-success {
+    background-color: #4caf50 !important;
+    color: #ffffff !important;
+  }
+.toast-error {
+    background-color: #ff6262 !important; 
+    color: #ffffff !important;
+  }
+  .toast-container .ngx-toastr {
+    border-radius: 15px;
+  }
+  .toast-message,  .swal2-loader{
+    font-size: 20px; 
+    font-weight: 400;
+    padding: 0 1rem 1rem 1rem;
+  }
+  .toast-title, .swal2-title {
+    font-size: 22px; 
+    font-weight: 600;
+    padding: 1rem 1rem 0 1rem;
+  }
+  .toast-top-right {
+    top: 30px !important;
+    right: 30px !important;
+  }
+  .mdc-text-field--filled:not(.mdc-text-field--disabled){
+    background-color: transparent !important;
+  }
+  .mdc-text-field--no-label:not(.mdc-text-field--outlined):not(.mdc-text-field--textarea) .mat-mdc-form-field-infix{
+    padding: 0;
+  }
